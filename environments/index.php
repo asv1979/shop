@@ -36,6 +36,7 @@ return [
             'backend/web/assets',
             'console/runtime',
             'frontend/runtime',
+            'common/runtime',
             'frontend/web/assets',
         ],
         'setExecutable' => [
@@ -54,6 +55,7 @@ return [
             'backend/web/assets',
             'console/runtime',
             'frontend/runtime',
+            'common/runtime',
             'frontend/web/assets',
         ],
         'setExecutable' => [
