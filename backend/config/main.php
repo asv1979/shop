@@ -44,5 +44,16 @@ return [
             return Yii::$app->get('backendUrlManager');
         },
     ],
+    'as access' => [
+        'class' => 'yii\filters\AccessControl',
+        'except' => ['auth/login', 'site/error','site/login'],
+        'rules' => [
+            [
+                'allow' => true,
+//                'roles' => ['admin'],
+                'roles' => ['@'],
+            ],
+        ],
+    ],
     'params' => $params,
 ];
